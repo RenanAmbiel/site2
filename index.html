@@ -67,25 +67,11 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contato</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Nome</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Mensagem</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Enviar" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
+								<form name="contact" method="POST" data-netlify="true">
+								    <input type="text" name="name" placeholder="Your Name" required>
+								    <input type="email" name="email" placeholder="Your Email" required>
+								    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+								    <button type="submit">Send</button>
 								</form>
 								<ul class="icons">
 									<li><a href="https://renanambielreman.users.earthengine.app/view/telhasceramica" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -287,7 +273,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 								<section>
 									<h3 class="major">Form</h3>
-									<form method="post"  data-netlify="true">
+									<form method="post" action="enviar-email.php">
 										<div class="fields">
 											<div class="field half">
 												<label for="demo-name">Name</label>
